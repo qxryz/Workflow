@@ -1,0 +1,15 @@
+.DS_Store
+.build/
+dist/
+.swiftpm/
+*.xcuserdata/
+DerivedData/
+.omx/
+.codex/
+.superpowers/
+.worktrees/
+.claude/
+.qa/
+
+# Local/private materials
+*.rtfd/

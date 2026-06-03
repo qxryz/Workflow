@@ -1,0 +1,28 @@
+* text=auto eol=lf
+
+*.swift   text eol=lf
+*.md      text eol=lf
+*.json    text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.sh      text eol=lf
+*.html    text eol=lf
+
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.webp    binary
+*.ico     binary
+*.pdf     binary
+*.mov     binary
+*.mp4     binary
+*.mp3     binary
+*.wav     binary
+
+# Avoid line-ending churn on macOS-generated plist files.
+*.plist   text eol=lf
+
+Package.resolved linguist-generated=true
+.build/ linguist-generated=true
+dist/ linguist-generated=true
