@@ -1,0 +1,109 @@
+excluded:
+  - .build
+  - dist
+  - .swiftpm
+  - .worktrees
+  - Sources/WorkflowGenerator/App/AppearanceSupport.swift   # AppKit type bridging + global helpers; relax rules here
+  - website
+
+opt_in_rules:
+  - anyobject_protocol
+  - array_init
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - contains_over_filter_count
+  - contains_over_filter_isempty
+  - contains_over_first_not_nil
+  - convenience_type
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - enum_case_associated_values_count
+  - explicit_init
+  - extension_access_modifier
+  - fallthrough
+  - fatal_error_message
+  - file_header
+  - first_where
+  - flatmap_over_map_reduce
+  - force_unwrapping
+  - function_default_parameter_at_end
+  - implicit_return
+  - joined_default_parameter
+  - last_where
+  - legacy_multiple
+  - literal_expression_end_indentation
+  - lower_acl_than_parent
+  - missing_docs
+  - modifier_order
+  - multiline_arguments
+  - multiline_function_chains
+  - multiline_literal_brackets
+  - multiline_parameters
+  - multiple_closure_params
+  - operator_usage_whitespace
+  - override_in_extension
+  - pattern_matching_keywords
+  - prefer_self_type_over_type_of_self
+  - prefer_zero_over_explicit_init
+  - private_action
+  - private_outlet
+  - prohibited_super_class
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - return_arrow_whitespace
+  - sorted_first_last
+  - sorted_imports
+  - strict_fileprivate
+  - switch_case_alignment
+  - toggle_bool
+  - trailing_closure
+  - unneeded_break_in_switch
+  - unneeded_parentheses_in_closure_argument
+  - unneeded_override
+  - unused_import
+  - vertical_parameter_alignment_on_call
+  - vertical_whitespace_closing_braces
+  - vertical_whitespace_opening_braces
+  - yoda_condition
+
+disabled_rules:
+  - todo
+  - line_length
+  - type_body_length
+  - file_length
+  - function_body_length
+  - identifier_name
+  - cyclomatic_complexity
+  - force_cast
+
+force_cast: error
+force_try: error
+force_unwrapping: warning
+
+analyzer_rules:
+  - unused_import
+  - unused_declaration
+
+identifier_name:
+  min_length:
+    error: 1
+    warning: 1
+  excluded:
+    - id
+    - x
+    - y
+    - z
+
+type_name:
+  min_length: 3
+  max_length:
+    warning: 60
+    error: 80
+
+trailing_whitespace:
+  ignores_empty_lines: true
+
+vertical_whitespace:
+  max_empty_lines: 2
